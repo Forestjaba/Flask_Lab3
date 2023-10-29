@@ -8,3 +8,4 @@
 ![Снимок экрана (280)](https://github.com/Forestjaba/Flask_Lab3/assets/125629240/df104f91-65ce-4c05-9f0a-a3197be3851d)
 ![Снимок экрана (281)](https://github.com/Forestjaba/Flask_Lab3/assets/125629240/a27fbb51-e96a-4a3b-ab1b-cd53ba1f22d5)
 ![Снимок экрана (282)](https://github.com/Forestjaba/Flask_Lab3/assets/125629240/c33911c3-075b-4948-82c5-41c79dd15f43)
+![Снимок экрана (298)](https://github.com/Forestjaba/Flask_Lab3/assets/125629240/13f10928-bb78-4d4c-9d92-a0fd0a2f0406)

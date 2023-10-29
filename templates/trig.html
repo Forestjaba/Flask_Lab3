@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Тригонометрический калькулятор</h1>
+    <form action="/" method="POST">
+      <label for="unit">Выберите единицу измерения:</label>
+      <select id="unit" name="unit">
+        <option value="degrees">Градусы</option>
+        <option value="radians">Радианы</option>
+      </select>
+        <br><br>
+      <label for="angle">Введите угол:</label>
+      <input type="number" id="angle" name="angle" required step="0.01">
+      <br><br>
+      <label for="function">Выберите функцию:</label>
+      <select id="function" name="function">
+        <option value="Sin">Sin</option>
+        <option value="Cos">Cos</option>
+        <option value="Tg">Tg</option>
+        <option value="Ctg">Ctg</option>
+      </select>
+      <br><br>
+      <label for="precision">Введите точность:</label>
+      <input type="number" id="precision" name="precision" required>
+      <br><br>
+      <button type="submit">Расчитать</button>
+    </form>
+    {% if sin_val or cos_val or tg_val or ctg_val%}
+        <p>{{ function }} от {{ angle }} градусов равен {% if function == 'Sin' %}{{ sin_val }}{% elif function == 'Cos' %}{{ cos_val }}{% elif function == 'Tg' %}{{ tg_val }}{% else %}{{ ctg_val }}{% endif %}.</p>
+    {% endif %}
+</body>
+</html>

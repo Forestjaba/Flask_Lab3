@@ -35,7 +35,7 @@ class TrigTest(unittest.TestCase):
                                data={'angle': '80', 'function': 'Ctg', 'unit': 'degrees', 'precision': '3'})
         self.assertIn('0.176', response.data.decode())
 
-    def test_ctg_degrees(self):
+    def test_cos_radians(self):
         tester = app.test_client(self)
         response = tester.post("/", content_type='multipart/form-data',
                                data={'angle': '3.14', 'function': 'Cos', 'unit': 'radians', 'precision': '3'})
